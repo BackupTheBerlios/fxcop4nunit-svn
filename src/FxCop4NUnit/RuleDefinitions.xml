@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?> 
 <Rules FriendlyName="Futureware NUnit Rules">
     <Rule TypeName="TestFixturesShouldBePublic" Category="Futureware.FxCop.NUnit" CheckId="FNU1001">
         <Name>TestFixture should be declared public</Name>
@@ -148,14 +148,14 @@
     </Rule>
     <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructor" Category="Futureware.FxCop.NUnit" CheckId="FNU1013">
         <Name>TestFixture constructor should be public.</Name>
-        <Description>A test fixture should not have a non-public constructor.</Description>
-        <Url>http://www.futureware.biz/</Url>
-        <Resolution>Make the constructor for '{0}' public.</Resolution>
+        <Description>The constructor for the test fixture must be visible outside the declaring assembly.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
+        <Resolution>Mark the constructor for '{0}' public.</Resolution>
         <Email>vboctor@users.sourceforge.net</Email>
         <MessageLevel Certainty="99">Error</MessageLevel>
         <FixCategories>NonBreaking</FixCategories>
-        <Owner>Victor Boctor</Owner>        
+        <Owner>Victor Boctor</Owner>
         <GroupOwner>Futureware</GroupOwner>
-        <DevOwner>Victor Boctor</DevOwner>    
+        <DevOwner>Victor Boctor</DevOwner>
     </Rule>
 </Rules>

@@ -33,7 +33,7 @@ namespace Futureware.FxCop.NUnit
 		public override ProblemCollection Check(TypeNode type)
 		{
 			Type runtimeType = type.GetRuntimeType();
-			if ( IsTestFixture( runtimeType ) && !runtimeType.IsAbstract )
+			if ( IsTestFixture( runtimeType ) && !runtimeType.IsAbstract && type.IsVisibleOutsideAssembly )
 			{
 				MemberList constructors = type.GetConstructors();
 
@@ -48,8 +48,9 @@ namespace Futureware.FxCop.NUnit
 					if ( instanceConstructor == null )
 						continue;
 
-					// TODO: we probably should only check the default constructor
-					if ( !constructor.IsVisibleOutsideAssembly )
+					// trigger errors for default constructors with non-public visibility
+					if ( ( instanceConstructor.Parameters.Length == 0 ) &&
+						  !instanceConstructor.IsVisibleOutsideAssembly )
 					{
 						Resolution resolution = GetResolution( runtimeType.Name );
 						Problem problem = new Problem( resolution );
