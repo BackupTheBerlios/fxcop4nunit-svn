@@ -13,12 +13,12 @@ Global
 		Release = Release
 	EndGlobalSection
 	GlobalSection(ProjectConfiguration) = postSolution
-		{DC87CCCF-926A-47C8-9210-AD852E80FC40}.Debug.ActiveCfg = Debug|.NET
-		{DC87CCCF-926A-47C8-9210-AD852E80FC40}.Debug.Build.0 = Debug|.NET
+		{DC87CCCF-926A-47C8-9210-AD852E80FC40}.Debug.ActiveCfg = Release|.NET
+		{DC87CCCF-926A-47C8-9210-AD852E80FC40}.Debug.Build.0 = Release|.NET
 		{DC87CCCF-926A-47C8-9210-AD852E80FC40}.Release.ActiveCfg = Release|.NET
 		{DC87CCCF-926A-47C8-9210-AD852E80FC40}.Release.Build.0 = Release|.NET
-		{74B2023E-7456-4F9D-94A4-05CD41A64082}.Debug.ActiveCfg = Debug|.NET
-		{74B2023E-7456-4F9D-94A4-05CD41A64082}.Debug.Build.0 = Debug|.NET
+		{74B2023E-7456-4F9D-94A4-05CD41A64082}.Debug.ActiveCfg = Release|.NET
+		{74B2023E-7456-4F9D-94A4-05CD41A64082}.Debug.Build.0 = Release|.NET
 		{74B2023E-7456-4F9D-94A4-05CD41A64082}.Release.ActiveCfg = Release|.NET
 		{74B2023E-7456-4F9D-94A4-05CD41A64082}.Release.Build.0 = Release|.NET
 	EndGlobalSection
