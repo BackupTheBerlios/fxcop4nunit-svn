@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?> 
-<Rules FriendlyName="Futureware NUnit Rules">
-    <Rule TypeName="TestFixturesShouldBePublic" Category="Futureware.FxCop.NUnit" CheckId="FNU1001">
+<Rules FriendlyName="NUnit Rules">
+    <Rule TypeName="TestFixturesShouldBePublic" Category="TestFixtures" CheckId="FNU1001">
         <Name>TestFixture should be declared public</Name>
         <Description>A non-public class is marked as a test fixture.  This test fixture will not be executed by NUnit.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBePublic</Url>
@@ -12,7 +12,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesShouldNotBeAbstract" Category="Futureware.FxCop.NUnit" CheckId="FNU1002">
+    <Rule TypeName="TestFixturesShouldNotBeAbstract" Category="TestFixtures" CheckId="FNU1002">
         <Name>TestFixture should not be abstract</Name>
         <Description>Test fixture classes should not be abstract.  Move the [TestFixture] attribute to the concrete class.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotBeAbstract</Url>
@@ -24,7 +24,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesShouldBeSealed" Category="Futureware.FxCop.NUnit" CheckId="FNU1003">
+    <Rule TypeName="TestFixturesShouldBeSealed" Category="TestFixtures" CheckId="FNU1003">
         <Name>TestFixture should be sealed</Name>
         <Description>Test fixture classes should be sealed, base classes should not be test fixtures.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBeSealed</Url>
@@ -36,7 +36,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesShouldHaveSingleSetupMethod" Category="Futureware.FxCop.NUnit" CheckId="FNU1004">
+    <Rule TypeName="TestFixturesShouldHaveSingleSetupMethod" Category="TestFixtures" CheckId="FNU1004">
         <Name>TestFixture should have a single setup method</Name>
         <Description>Test fixture classes should have 0 to 1 setup methods.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleSetupMethod</Url>
@@ -48,7 +48,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethod" Category="Futureware.FxCop.NUnit" CheckId="FNU1005">
+    <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethod" Category="TestFixtures" CheckId="FNU1005">
         <Name>TestFixture should have a single tear down method</Name>
         <Description>Test fixture classes should have 0 to 1 tear down methods.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleTearDownMethod</Url>
@@ -60,7 +60,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttribute" Category="Futureware.FxCop.NUnit" CheckId="FNU1006">
+    <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttribute" Category="TestCases" CheckId="FNU1006">
         <Name>Test cases should be marked with TestAttribute</Name>
         <Description>NUnit detects test case as methods that are marked with TestAttribute or methods that start with "test" (case insensitive).  The recommended approach is to use TestAttribute rather than the name prefix which is supported for backward compatability.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestCasesShouldBeMarkedWithTestCaseAttribute</Url>
@@ -72,7 +72,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesPublicMethodsShouldBeMarked" Category="Futureware.FxCop.NUnit" CheckId="FNU1007">
+    <Rule TypeName="TestFixturesPublicMethodsShouldBeMarked" Category="TestFixtures" CheckId="FNU1007">
         <Name>Test fixture public method should be marked</Name>
         <Description>Test fixtures public methods should be marked as setup, tear down, or test case.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesPublicMethodsShouldBeMarked</Url>
@@ -84,7 +84,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="AttributeShouldOnlyMarkTestFixtures" Category="Futureware.FxCop.NUnit" CheckId="FNU1008">
+    <Rule TypeName="AttributeShouldOnlyMarkTestFixtures" Category="TestFixtures" CheckId="FNU1008">
         <Name>Attribute should only mark test fixtures</Name>
         <Description>An NUnit attribute is used to mark a class which is not a TestFixture.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestFixtures</Url>
@@ -96,7 +96,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="AttributeShouldOnlyMarkTestCases" Category="Futureware.FxCop.NUnit" CheckId="FNU1009">
+    <Rule TypeName="AttributeShouldOnlyMarkTestCases" Category="TestCases" CheckId="FNU1009">
         <Name>Attribute should only mark test cases</Name>
         <Description>An NUnit attribute is used to mark a method which is not a test case.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestCases</Url>
@@ -108,7 +108,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="CategoryNameShouldNotBeEmpty" Category="Futureware.FxCop.NUnit" CheckId="FNU1010">
+    <Rule TypeName="CategoryNameShouldNotBeEmpty" Category="Attributes" CheckId="FNU1010">
         <Name>Category name should be specified</Name>
         <Description>A category attribute is used with its name set to a blank string.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.CategoryNameShouldNotBeEmpty</Url>
@@ -121,7 +121,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="IgnoreReasonShouldNotBeEmpty" Category="Futureware.FxCop.NUnit" CheckId="FNU1011">
+    <Rule TypeName="IgnoreReasonShouldNotBeEmpty" Category="Attributes" CheckId="FNU1011">
         <Name>Ignore reason should be specified</Name>
         <Description>An ignore attribute is used with its name set to a blank string.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.IgnoreReasonShouldNotBeEmpty</Url>
@@ -134,7 +134,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesShouldNotContainPublicProperties" Category="Futureware.FxCop.NUnit" CheckId="FNU1012">
+    <Rule TypeName="TestFixturesShouldNotContainPublicProperties" Category="TestFixtures" CheckId="FNU1012">
         <Name>TestFixture should not have public properties</Name>
         <Description>A test fixture should not have public properties whether inherited or declared within the type.  This includes both static and instance properties.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotContainPublicProperties</Url>
@@ -146,7 +146,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
-    <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructor" Category="Futureware.FxCop.NUnit" CheckId="FNU1013">
+    <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructor" Category="TestFixtures" CheckId="FNU1013">
         <Name>TestFixture constructor should be public</Name>
         <Description>The constructor for the test fixture must be visible outside the declaring assembly.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
@@ -158,7 +158,7 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>
     </Rule>
-    <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructors" Category="Futureware.FxCop.NUnit" CheckId="FNU1014">
+    <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructors" Category="TestFixtures" CheckId="FNU1014">
         <Name>TestFixture has a non-default constructor</Name>
         <Description>Test fixtures should only have a default constructor.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldOnlyContainDefaultConstructors</Url>

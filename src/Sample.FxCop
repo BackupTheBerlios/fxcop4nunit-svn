@@ -48,7 +48,7 @@
         <Types>
          <Type Name="IgnoreTestFixtureWithEmptyReason">
           <Messages>
-           <Message TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1011" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1011" Created="2005-03-01 10:51:37Z">
             <Issue Name="TestFixture">
              <Item>IgnoreTestFixtureWithEmptyReason</Item>
             </Issue>
@@ -57,7 +57,7 @@
          </Type>
          <Type Name="NonNUnitPublicMethod">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>StrangePublicMethod</Item>
             </Issue>
@@ -66,7 +66,7 @@
          </Type>
          <Type Name="NonTestFixtureWithCategory">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1008" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="TestFixtures" CheckId="FNU1008" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>NonTestFixtureWithCategory</Item>
             </Issue>
@@ -75,7 +75,7 @@
          </Type>
          <Type Name="NonTestFixtureWithExplicit">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1008" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="TestFixtures" CheckId="FNU1008" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>NonTestFixtureWithExplicit</Item>
             </Issue>
@@ -84,7 +84,7 @@
          </Type>
          <Type Name="NonTestFixtureWithIgnore">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1008" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="TestFixtures" CheckId="FNU1008" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>NonTestFixtureWithIgnore</Item>
             </Issue>
@@ -93,12 +93,12 @@
          </Type>
          <Type Name="TestFixtureContainingCategoryWithoutTestAttribute">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="TestCases" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>CategoryTestCase</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>CategoryTestCase</Item>
             </Issue>
@@ -107,12 +107,12 @@
          </Type>
          <Type Name="TestFixtureContainingExceptionExpectedWithoutTestAttribute">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="TestCases" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ExceptionTestCase</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ExceptionTestCase</Item>
             </Issue>
@@ -121,12 +121,12 @@
          </Type>
          <Type Name="TestFixtureContainingExplicitWithoutTestAttribute">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="TestCases" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ExplicitTestCase</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ExplicitTestCase</Item>
             </Issue>
@@ -135,12 +135,12 @@
          </Type>
          <Type Name="TestFixtureContainingIgnoreWithoutTestAttribute">
           <Messages>
-           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="TestCases" CheckId="FNU1009" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>IgnoreTestCase</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>IgnoreTestCase</Item>
             </Issue>
@@ -149,7 +149,7 @@
          </Type>
          <Type Name="TestFixtureIncludingTestCaseWithEmptyCategory">
           <Messages>
-           <Message TypeName="CategoryNameShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1010" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="CategoryNameShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1010" Created="2005-03-01 10:51:37Z">
             <Issue Name="TestCase">
              <Item>TestFixtureIncludingTestCaseWithEmptyCategory</Item>
              <Item>TestCaseWithEmptyCategory</Item>
@@ -159,7 +159,7 @@
          </Type>
          <Type Name="TestFixtureIncludingTestCaseWithEmptyIgnoreReason">
           <Messages>
-           <Message TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1011" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1011" Created="2005-03-01 10:51:37Z">
             <Issue Name="TestCase">
              <Item>TestFixtureIncludingTestCaseWithEmptyIgnoreReason</Item>
              <Item>TestCaseWithEmptyIgnoreReason</Item>
@@ -169,7 +169,7 @@
          </Type>
          <Type Name="TestFixtureWithEmptyCategory">
           <Messages>
-           <Message TypeName="CategoryNameShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1010" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="CategoryNameShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1010" Created="2005-03-01 10:51:37Z">
             <Issue Name="TestFixture">
              <Item>TestFixtureWithEmptyCategory</Item>
             </Issue>
@@ -178,7 +178,7 @@
          </Type>
          <Type Name="TestFixtureWithEmptyIgnoreReason">
           <Messages>
-           <Message TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1011" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1011" Created="2005-03-01 10:51:37Z">
             <Issue Name="TestFixture">
              <Item>TestFixtureWithEmptyIgnoreReason</Item>
             </Issue>
@@ -187,7 +187,7 @@
          </Type>
          <Type Name="TestFixtureWithInheritedPublicProperty">
           <Messages>
-           <Message TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1012" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="TestFixtures" CheckId="FNU1012" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>BaseTestFixtureWithPublicProperty</Item>
              <Item>SampleProperty</Item>
@@ -197,7 +197,7 @@
          </Type>
          <Type Name="TestFixtureWithNoDefaultConstructor">
           <Messages>
-           <Message TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1014" Created="2005-03-01 11:39:27Z">
+           <Message TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="TestFixtures" CheckId="FNU1014" Created="2005-03-01 11:39:27Z">
             <Issue>
              <Item>TestFixtureWithNoDefaultConstructor</Item>
             </Issue>
@@ -206,7 +206,7 @@
          </Type>
          <Type Name="TestFixtureWithPrivateConstructor">
           <Messages>
-           <Message TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1013" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="TestFixtures" CheckId="FNU1013" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TestFixtureWithPrivateConstructor</Item>
             </Issue>
@@ -215,12 +215,12 @@
          </Type>
          <Type Name="TestFixtureWithPublicProperties">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>get_SampleProperty</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1012" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="TestFixtures" CheckId="FNU1012" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TestFixtureWithPublicProperties</Item>
              <Item>SampleProperty</Item>
@@ -230,7 +230,7 @@
          </Type>
          <Type Name="UnmarkedTestCaseFixture">
           <Messages>
-           <Message TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1006" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="TestCases" CheckId="FNU1006" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TestSomething</Item>
             </Issue>
@@ -243,12 +243,12 @@
         <Types>
          <Type Name="AbstractTestFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>AbstractTestFixture</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldNotBeAbstractRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1002" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldNotBeAbstractRule" Category="TestFixtures" CheckId="FNU1002" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>AbstractTestFixture</Item>
             </Issue>
@@ -257,7 +257,7 @@
          </Type>
          <Type Name="BadCtorFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>BadCtorFixture</Item>
             </Issue>
@@ -266,7 +266,7 @@
          </Type>
          <Type Name="FixtureSetUpWithParameters">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>FixtureSetUpWithParameters</Item>
             </Issue>
@@ -275,12 +275,12 @@
          </Type>
          <Type Name="FixtureSetUpWithReturnValue">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Setup</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>FixtureSetUpWithReturnValue</Item>
             </Issue>
@@ -289,12 +289,12 @@
          </Type>
          <Type Name="FixtureTearDownWithParameters">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Teardown</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>FixtureTearDownWithParameters</Item>
             </Issue>
@@ -303,12 +303,12 @@
          </Type>
          <Type Name="FixtureTearDownWithReturnValue">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Teardown</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>FixtureTearDownWithReturnValue</Item>
             </Issue>
@@ -317,7 +317,7 @@
          </Type>
          <Type Name="IgnoredFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>IgnoredFixture</Item>
             </Issue>
@@ -326,7 +326,7 @@
          </Type>
          <Type Name="MultipleFixtureSetUpAttributes">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Init1</Item>
             </Issue>
@@ -334,12 +334,12 @@
              <Item>Init2</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleFixtureSetUpAttributes</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1004" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="TestFixtures" CheckId="FNU1004" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleFixtureSetUpAttributes</Item>
             </Issue>
@@ -348,7 +348,7 @@
          </Type>
          <Type Name="MultipleFixtureTearDownAttributes">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Destroy1</Item>
             </Issue>
@@ -356,12 +356,12 @@
              <Item>Destroy2</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleFixtureTearDownAttributes</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1005" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="TestFixtures" CheckId="FNU1005" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleFixtureTearDownAttributes</Item>
             </Issue>
@@ -370,17 +370,17 @@
          </Type>
          <Type Name="MultipleSetUpAttributes">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Init2</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleSetUpAttributes</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1004" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="TestFixtures" CheckId="FNU1004" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleSetUpAttributes</Item>
             </Issue>
@@ -389,17 +389,17 @@
          </Type>
          <Type Name="MultipleTearDownAttributes">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>Destroy2</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleTearDownAttributes</Item>
             </Issue>
            </Message>
-           <Message TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1005" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="TestFixtures" CheckId="FNU1005" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>MultipleTearDownAttributes</Item>
             </Issue>
@@ -408,7 +408,7 @@
          </Type>
          <Type Name="NoDefaultCtorFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>NoDefaultCtorFixture</Item>
             </Issue>
@@ -417,7 +417,7 @@
          </Type>
          <Type Name="OuterClass+NestedTestFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>NestedTestFixture</Item>
             </Issue>
@@ -426,7 +426,7 @@
          </Type>
          <Type Name="OuterClass+NestedTestFixture+DoublyNestedTestFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>DoublyNestedTestFixture</Item>
             </Issue>
@@ -435,7 +435,7 @@
          </Type>
          <Type Name="PrivateFixtureSetUp">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>PrivateFixtureSetUp</Item>
             </Issue>
@@ -444,7 +444,7 @@
          </Type>
          <Type Name="PrivateFixtureTearDown">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>PrivateFixtureTearDown</Item>
             </Issue>
@@ -453,7 +453,7 @@
          </Type>
          <Type Name="PrivateSetUp">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>PrivateSetUp</Item>
             </Issue>
@@ -462,7 +462,7 @@
          </Type>
          <Type Name="PrivateTearDown">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>PrivateTearDown</Item>
             </Issue>
@@ -471,7 +471,7 @@
          </Type>
          <Type Name="ProtectedFixtureSetUp">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ProtectedFixtureSetUp</Item>
             </Issue>
@@ -480,7 +480,7 @@
          </Type>
          <Type Name="ProtectedFixtureTearDown">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ProtectedFixtureTearDown</Item>
             </Issue>
@@ -489,7 +489,7 @@
          </Type>
          <Type Name="ProtectedSetUp">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ProtectedSetUp</Item>
             </Issue>
@@ -498,7 +498,7 @@
          </Type>
          <Type Name="ProtectedTearDown">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>ProtectedTearDown</Item>
             </Issue>
@@ -507,7 +507,7 @@
          </Type>
          <Type Name="SetUpWithParameters">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>SetUpWithParameters</Item>
             </Issue>
@@ -516,7 +516,7 @@
          </Type>
          <Type Name="SetUpWithReturnValue">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>SetUpWithReturnValue</Item>
             </Issue>
@@ -525,7 +525,7 @@
          </Type>
          <Type Name="SignatureTestFixture">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>SignatureTestFixture</Item>
             </Issue>
@@ -534,7 +534,7 @@
          </Type>
          <Type Name="StaticFixtureSetUp">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>StaticFixtureSetUp</Item>
             </Issue>
@@ -543,7 +543,7 @@
          </Type>
          <Type Name="StaticFixtureTearDown">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>StaticFixtureTearDown</Item>
             </Issue>
@@ -552,7 +552,7 @@
          </Type>
          <Type Name="StaticSetUp">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>StaticSetUp</Item>
             </Issue>
@@ -561,7 +561,7 @@
          </Type>
          <Type Name="StaticTearDown">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>StaticTearDown</Item>
             </Issue>
@@ -570,7 +570,7 @@
          </Type>
          <Type Name="TearDownWithParameters">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TearDownWithParameters</Item>
             </Issue>
@@ -579,7 +579,7 @@
          </Type>
          <Type Name="TearDownWithReturnValue">
           <Messages>
-           <Message TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
+           <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TearDownWithReturnValue</Item>
             </Issue>
@@ -594,7 +594,7 @@
    </Target>
   </Targets>
   <Rules>
-   <Rule TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1009">
+   <Rule TypeName="AttributeShouldOnlyMarkTestCasesRule" Category="TestCases" CheckId="FNU1009">
     <Name>Attribute should only mark test cases</Name>
     <Description>An NUnit attribute is used to mark a method which is not a test case.</Description>
     <Resolution Name="Default">Mark method '{0}' with [Test] or remove other NUnit attributes marking this method.</Resolution>
@@ -602,9 +602,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestCases</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1008">
+   <Rule TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="TestFixtures" CheckId="FNU1008">
     <Name>Attribute should only mark test fixtures</Name>
     <Description>An NUnit attribute is used to mark a class which is not a TestFixture.</Description>
     <Resolution Name="Default">Mark class '{0}' with [TestFixture] or remove other NUnit attributes marking this class.</Resolution>
@@ -612,9 +612,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestFixtures</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="CategoryNameShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1010">
+   <Rule TypeName="CategoryNameShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1010">
     <Name>Category name should be specified</Name>
     <Description>A category attribute is used with its name set to a blank string.</Description>
     <Resolution Name="TestCase">Set category name in CategoryAttribute associated with test case '{1}' in test fixture '{0}'.</Resolution>
@@ -623,9 +623,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.CategoryNameShouldNotBeEmpty</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1011">
+   <Rule TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1011">
     <Name>Ignore reason should be specified</Name>
     <Description>An ignore attribute is used with its name set to a blank string.</Description>
     <Resolution Name="TestCase">Set ignore reason in IgnoreAttribute associated with test case '{1}' in test fixture '{0}'.</Resolution>
@@ -634,9 +634,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.IgnoreReasonShouldNotBeEmpty</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1006">
+   <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="TestCases" CheckId="FNU1006">
     <Name>Test cases should be marked with TestAttribute</Name>
     <Description>NUnit detects test case as methods that are marked with TestAttribute or methods that start with "test" (case insensitive).  The recommended approach is to use TestAttribute rather than the name prefix which is supported for backward compatability.</Description>
     <Resolution Name="Default">Test case '{0}' is not marked with the TestAttribute, mark it with the TestAttribute or rename it so that it doesn't start with "test".</Resolution>
@@ -644,9 +644,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestCasesShouldBeMarkedWithTestCaseAttribute</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007">
+   <Rule TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007">
     <Name>Test fixture public method should be marked</Name>
     <Description>Test fixtures public methods should be marked as setup, tear down, or test case.</Description>
     <Resolution Name="Default">Public method '{0}' is not marked as setup, tear down, or test case.  Mark it as an NUnit method or make it non-public.</Resolution>
@@ -654,9 +654,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesPublicMethodsShouldBeMarked</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001">
+   <Rule TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001">
     <Name>TestFixture should be declared public</Name>
     <Description>A non-public class is marked as a test fixture.  This test fixture will not be executed by NUnit.</Description>
     <Resolution Name="Default">Declare '{0}' as public or remove the [TestFixture] attribute.</Resolution>
@@ -664,9 +664,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBePublic</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1013">
+   <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="TestFixtures" CheckId="FNU1013">
     <Name>TestFixture constructor should be public</Name>
     <Description>The constructor for the test fixture must be visible outside the declaring assembly.</Description>
     <Resolution Name="Default">Mark the constructor for '{0}' public.</Resolution>
@@ -674,9 +674,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1004">
+   <Rule TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="TestFixtures" CheckId="FNU1004">
     <Name>TestFixture should have a single setup method</Name>
     <Description>Test fixture classes should have 0 to 1 setup methods.</Description>
     <Resolution Name="Default">Test fixture '{0}' has more than one setup method, mark only one as a setup method.</Resolution>
@@ -684,9 +684,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleSetupMethod</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1005">
+   <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="TestFixtures" CheckId="FNU1005">
     <Name>TestFixture should have a single tear down method</Name>
     <Description>Test fixture classes should have 0 to 1 tear down methods.</Description>
     <Resolution Name="Default">Test fixture '{0}' has more than one tear down method, mark only one as a tear down method.</Resolution>
@@ -694,9 +694,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleTearDownMethod</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldNotBeAbstractRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1002">
+   <Rule TypeName="TestFixturesShouldNotBeAbstractRule" Category="TestFixtures" CheckId="FNU1002">
     <Name>TestFixture should not be abstract</Name>
     <Description>Test fixture classes should not be abstract.  Move the [TestFixture] attribute to the concrete class.</Description>
     <Resolution Name="Default">Test fixture '{0}' is abstract, move the [TestFixture] attribute to the concrete class.</Resolution>
@@ -704,9 +704,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotBeAbstract</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1012">
+   <Rule TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="TestFixtures" CheckId="FNU1012">
     <Name>TestFixture should not have public properties</Name>
     <Description>A test fixture should not have public properties whether inherited or declared within the type.  This includes both static and instance properties.</Description>
     <Resolution Name="Default">Mark property '{0}.{1}' as protected or private.</Resolution>
@@ -714,9 +714,9 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotContainPublicProperties</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
-   <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1014">
+   <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="TestFixtures" CheckId="FNU1014">
     <Name>TestFixture has a non-default constructor</Name>
     <Description>Test fixtures should only have a default constructor.</Description>
     <Resolution Name="Default">Change '{0}' to only have a default constructor.</Resolution>
@@ -724,7 +724,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldOnlyContainDefaultConstructors</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.41141" />
    </Rule>
   </Rules>
  </FxCopReport>
