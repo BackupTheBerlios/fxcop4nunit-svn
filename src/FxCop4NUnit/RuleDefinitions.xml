@@ -147,10 +147,22 @@
         <DevOwner>Victor Boctor</DevOwner>    
     </Rule>
     <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructor" Category="Futureware.FxCop.NUnit" CheckId="FNU1013">
-        <Name>TestFixture constructor should be public.</Name>
+        <Name>TestFixture constructor should be public</Name>
         <Description>The constructor for the test fixture must be visible outside the declaring assembly.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
         <Resolution>Mark the constructor for '{0}' public.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>
+    </Rule>
+    <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructors" Category="Futureware.FxCop.NUnit" CheckId="FNU1014">
+        <Name>TestFixture has a non-default constructor</Name>
+        <Description>Test fixtures should only have a default constructor.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldOnlyContainDefaultConstructors</Url>
+        <Resolution>Change '{0}' to only have a default constructor.</Resolution>
         <Email>vboctor@users.sourceforge.net</Email>
         <MessageLevel Certainty="99">Error</MessageLevel>
         <FixCategories>NonBreaking</FixCategories>

@@ -195,6 +195,15 @@
            </Message>
           </Messages>
          </Type>
+         <Type Name="TestFixtureWithNoDefaultConstructor">
+          <Messages>
+           <Message TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1014" Created="2005-03-01 11:39:27Z">
+            <Issue>
+             <Item>TestFixtureWithNoDefaultConstructor</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
          <Type Name="TestFixtureWithPrivateConstructor">
           <Messages>
            <Message TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1013" Created="2005-03-01 10:51:37Z">
@@ -593,7 +602,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestCases</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1008">
     <Name>Attribute should only mark test fixtures</Name>
@@ -603,7 +612,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestFixtures</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="CategoryNameShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1010">
     <Name>Category name should be specified</Name>
@@ -614,7 +623,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.CategoryNameShouldNotBeEmpty</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1011">
     <Name>Ignore reason should be specified</Name>
@@ -625,7 +634,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.IgnoreReasonShouldNotBeEmpty</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1006">
     <Name>Test cases should be marked with TestAttribute</Name>
@@ -635,7 +644,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestCasesShouldBeMarkedWithTestCaseAttribute</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1007">
     <Name>Test fixture public method should be marked</Name>
@@ -645,7 +654,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesPublicMethodsShouldBeMarked</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesShouldBePublicRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1001">
     <Name>TestFixture should be declared public</Name>
@@ -655,17 +664,17 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBePublic</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1013">
-    <Name>TestFixture constructor should be public.</Name>
+    <Name>TestFixture constructor should be public</Name>
     <Description>The constructor for the test fixture must be visible outside the declaring assembly.</Description>
     <Resolution Name="Default">Mark the constructor for '{0}' public.</Resolution>
     <Owner>Victor Boctor</Owner>
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1004">
     <Name>TestFixture should have a single setup method</Name>
@@ -675,7 +684,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleSetupMethod</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1005">
     <Name>TestFixture should have a single tear down method</Name>
@@ -685,7 +694,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleTearDownMethod</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesShouldNotBeAbstractRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1002">
     <Name>TestFixture should not be abstract</Name>
@@ -695,7 +704,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotBeAbstract</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
    <Rule TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1012">
     <Name>TestFixture should not have public properties</Name>
@@ -705,7 +714,17 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotContainPublicProperties</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40248" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
+   </Rule>
+   <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="Futureware.FxCop.NUnit" CheckId="FNU1014">
+    <Name>TestFixture has a non-default constructor</Name>
+    <Description>Test fixtures should only have a default constructor.</Description>
+    <Resolution Name="Default">Change '{0}' to only have a default constructor.</Resolution>
+    <Owner>Victor Boctor</Owner>
+    <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldOnlyContainDefaultConstructors</Url>
+    <Email>vboctor@users.sourceforge.net</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.312.1886.40779" />
    </Rule>
   </Rules>
  </FxCopReport>
