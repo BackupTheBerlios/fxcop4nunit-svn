@@ -170,4 +170,17 @@
         <GroupOwner>Futureware</GroupOwner>
         <DevOwner>Victor Boctor</DevOwner>
     </Rule>
+    <Rule TypeName="TestCasesShouldHaveNoParametersOrReturnValue" Category="TestCases" CheckId="FNU1015">
+        <Name>TestCases should not have parameters or return value</Name>
+        <Description>Test case has parameters or a return value.  These should be removed.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestCasesShouldHaveNoParametersOrReturnValue</Url>
+        <Resolution Name="Parameters">Test case '{0}' has parameters, remove parameters to comply with NUnit test case standards.</Resolution>
+        <Resolution Name="ReturnType">Test case '{0}' returns a value, remove return value to comply with NUnit test case standards.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>
+    </Rule>
 </Rules>
