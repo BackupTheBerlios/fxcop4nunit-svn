@@ -145,11 +145,6 @@
                     BuildAction = "Compile"
                 />
                 <File
-                    RelPath = "TestFixtureShouldNotBeAbstractRule.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
                     RelPath = "TestFixturesPublicMethodsShouldBeMarkedRule.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
@@ -176,6 +171,11 @@
                 />
                 <File
                     RelPath = "TestFixturesShouldHaveSingleTearDownMethodRule.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TestFixturesShouldNotBeAbstractRule.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />

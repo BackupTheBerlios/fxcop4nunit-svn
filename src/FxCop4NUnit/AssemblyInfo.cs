@@ -18,14 +18,14 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Futureware NUnit Rules")]
-[assembly: AssemblyDescription("Futureware NUnit Rules")]
+[assembly: AssemblyTitle("Futureware FxCop4NUnit Rules")]
+[assembly: AssemblyDescription("Futureware FxCop4NUnit Rules")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Futureware Pty Ltd")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyProduct("FxCop4NUnit")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]		
+[assembly: AssemblyCulture("")]
 
 //
 // Version information for an assembly consists of the following four values:
@@ -38,7 +38,7 @@ using System.Runtime.CompilerServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.312.*")]
+[assembly: AssemblyVersion("1.0.*")]
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the 

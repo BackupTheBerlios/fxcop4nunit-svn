@@ -1,0 +1,19 @@
+FxCop4NUnit v1.0 - 01-MAR-2005
+------------------------------
+
+- Supports FxCop 1.312 and NUnit 2.2.
+- Added FNU1001: TestFixturesShouldBePublic
+- Added FNU1002: TestFixturesShouldNotBeAbstract
+- Added FNU1003: TestFixturesShouldBeSealed
+- Added FNU1004: TestFixturesShouldHaveSingleSetupMethod
+- Added FNU1005: TestFixturesShouldHaveSingleTearDownMethod
+- Added FNU1006: TestCasesShouldBeMarkedWithTestCaseAttribute
+- Added FNU1007: TestFixturesPublicMethodsShouldBeMarked
+- Added FNU1008: AttributeShouldOnlyMarkTestFixtures
+- Added FNU1009: AttributeShouldOnlyMarkTestCases
+- Added FNU1010: CategoryNameShouldNotBeEmpty
+- Added FNU1011: IgnoreReasonShouldNotBeEmpty
+- Added FNU1012: TestFixturesShouldNotContainPublicProperties
+- Added FNU1013: TestFixturesShouldHavePublicDefaultConstructor
+- Added FNU1014: TestFixturesShouldOnlyContainDefaultConstructors
+- Initial version.
