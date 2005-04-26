@@ -46,12 +46,16 @@ namespace Futureware.FxCop.NUnit
 				// Same applies for tearDownMethod.
 				System.Reflection.MethodInfo setupMethod = Reflect.GetSetUpMethod( runtimeType );
 				System.Reflection.MethodInfo tearDownMethod = Reflect.GetTearDownMethod( runtimeType );
+				System.Reflection.MethodInfo fixtureSetupMethod = Reflect.GetFixtureSetUpMethod( runtimeType );
+				System.Reflection.MethodInfo fixtureTearDownMethod = Reflect.GetFixtureTearDownMethod( runtimeType );
 
 				foreach( System.Reflection.MethodInfo methodInfo in methods )
 				{
 					if ( !IsTestCaseMethod( methodInfo ) && 
 						 ( methodInfo != setupMethod ) && 
-						 ( methodInfo != tearDownMethod ) )
+						 ( methodInfo != tearDownMethod ) &&
+						 ( methodInfo != fixtureSetupMethod ) &&
+						 ( methodInfo != fixtureTearDownMethod ) )
 					{
 						Resolution resolution = GetResolution( methodInfo.Name );
 						Problem problem = new Problem( resolution );

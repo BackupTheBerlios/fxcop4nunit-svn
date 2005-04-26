@@ -38,9 +38,18 @@ namespace Futureware.FxCop.NUnit
 			if ( IsTestFixture( runtimeType ) )
 			{
 				// if more than one setup, trigger error.
-				if ( GetSetupMethodsCount( runtimeType ) > 1 )
+				if ( GetTestSetupMethodsCount( runtimeType ) > 1 )
 				{
-					Resolution resolution = GetResolution( type.Name.Name );
+					Resolution resolution = GetNamedResolution( "SetUp", type.Name.Name );
+					Problem problem = new Problem( resolution );
+					base.Problems.Add( problem );
+					return base.Problems;
+				}
+
+				// if more than one setup, trigger error.
+				if ( GetFixtureSetupMethodsCount( runtimeType ) > 1 )
+				{
+					Resolution resolution = GetNamedResolution( "TestFixtureSetUp", type.Name.Name );
 					Problem problem = new Problem( resolution );
 					base.Problems.Add( problem );
 					return base.Problems;

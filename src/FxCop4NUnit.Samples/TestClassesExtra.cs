@@ -202,4 +202,37 @@ namespace Futureware.FxCop.NUnit.Sample
 		{
 		}
 	}
+
+	[TestFixture]
+	public sealed class TestSetUpAndTearDownFixture
+	{
+		public TestSetUpAndTearDownFixture()
+		{
+		}
+
+		[TestFixtureSetUp]
+		public void TestFixtureSetUp()
+		{
+		}
+
+		[TestFixtureTearDown]
+		public void TestFixtureTearDown()
+		{
+		}
+
+		[SetUp]
+		public void TestCaseSetUp()
+		{
+		}
+
+		[TearDown]
+		public void TestCaseTearDown()
+		{
+		}
+
+		[Test]
+		public void SimpleTestCase()
+		{
+		}
+	}
 }

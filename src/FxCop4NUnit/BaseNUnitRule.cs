@@ -48,9 +48,9 @@ namespace Futureware.FxCop.NUnit
 			return Reflect.HasTestFixtureAttribute( type );
 		}
 
-		protected static int GetSetupMethodsCount( Type type )
+		protected static int GetFixtureSetupMethodsCount( Type type )
 		{
-			MethodInfo[] methods = type.GetMethods();
+			MethodInfo[] methods = type.GetMethods( BindingFlags.Instance | BindingFlags.Public );
 
 			int setupMethodsCount = 0;
 
@@ -58,11 +58,20 @@ namespace Futureware.FxCop.NUnit
 			{
 				// Check for [TestFixtureSetUp]
 				if ( methodInfo.IsDefined( typeof( TestFixtureSetUpAttribute ), false ) )
-				{
 					setupMethodsCount++;
-					continue;
-				}
+			}
 
+			return setupMethodsCount;
+		}
+
+		protected static int GetTestSetupMethodsCount( Type type )
+		{
+			MethodInfo[] methods = type.GetMethods( BindingFlags.Instance | BindingFlags.Public );
+
+			int setupMethodsCount = 0;
+
+			foreach ( MethodInfo methodInfo in methods )
+			{
 				// Check for [SetUp]
 				if ( methodInfo.IsDefined( typeof( SetUpAttribute ), false ) )
 					setupMethodsCount++;
@@ -71,22 +80,31 @@ namespace Futureware.FxCop.NUnit
 			return setupMethodsCount;
 		}
 
-		protected static int GetTearDownMethodsCount( Type type )
+		protected static int GetFixtureTearDownMethodsCount( Type type )
 		{
-			MethodInfo[] methods = type.GetMethods();
+			MethodInfo[] methods = type.GetMethods( BindingFlags.Instance | BindingFlags.Public );
 
 			int setupMethodsCount = 0;
 
 			foreach ( MethodInfo methodInfo in methods )
 			{
-				// Check for [TestFixtureSetUp]
+				// Check for [TestFixtureTearDown]
 				if ( methodInfo.IsDefined( typeof( TestFixtureTearDownAttribute ), false ) )
-				{
 					setupMethodsCount++;
-					continue;
-				}
+			}
 
-				// Check for [SetUp]
+			return setupMethodsCount;
+		}
+
+		protected static int GetTestTearDownMethodsCount( Type type )
+		{
+			MethodInfo[] methods = type.GetMethods( BindingFlags.Instance | BindingFlags.Public );
+
+			int setupMethodsCount = 0;
+
+			foreach ( MethodInfo methodInfo in methods )
+			{
+				// Check for [TearDown]
 				if ( methodInfo.IsDefined( typeof( TearDownAttribute ), false ) )
 					setupMethodsCount++;
 			}
@@ -96,16 +114,37 @@ namespace Futureware.FxCop.NUnit
 
 		protected static bool IsTestCaseMethod( MethodInfo methodInfo )
 		{
-			return ( methodInfo.Name.ToLower( CultureInfo.InvariantCulture ).StartsWith( "test" ) ||
-				     Reflect.HasTestAttribute( methodInfo ) );
+			if ( Reflect.HasTestAttribute( methodInfo ) )
+				return true;
+
+			if ( methodInfo.Name.ToLower( CultureInfo.InvariantCulture ).StartsWith( "test" ) )
+			{
+				if ( !IsTestSetupMethod( methodInfo ) &&
+					 !IsTestTearDownMethod( methodInfo ) &&
+					 !IsFixtureSetupMethod( methodInfo ) &&
+					 !IsFixtureTearDownMethod( methodInfo ) )
+					return true;
+			}
+
+			return false;
 		}
 
-		protected static bool IsSetupMethod( MethodInfo methodInfo )
+		protected static bool IsFixtureSetupMethod( MethodInfo methodInfo )
+		{
+			return Reflect.GetFixtureSetUpMethod( methodInfo.DeclaringType ) == methodInfo;
+		}
+
+		protected static bool IsFixtureTearDownMethod( MethodInfo methodInfo )
+		{
+			return Reflect.GetFixtureTearDownMethod( methodInfo.DeclaringType ) == methodInfo;
+		}
+
+		protected static bool IsTestSetupMethod( MethodInfo methodInfo )
 		{
 			return Reflect.GetSetUpMethod( methodInfo.DeclaringType ) == methodInfo;
 		}
 
-		protected static bool IsTearDownMethod( MethodInfo methodInfo )
+		protected static bool IsTestTearDownMethod( MethodInfo methodInfo )
 		{
 			return Reflect.GetTearDownMethod( methodInfo.DeclaringType ) == methodInfo;
 		}

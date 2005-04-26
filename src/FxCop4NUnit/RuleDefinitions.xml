@@ -40,7 +40,8 @@
         <Name>TestFixture should have a single setup method</Name>
         <Description>Test fixture classes should have 0 to 1 setup methods.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleSetupMethod</Url>
-        <Resolution>Test fixture '{0}' has more than one setup method, mark only one as a setup method.</Resolution>
+        <Resolution Name="SetUp">Test fixture '{0}' has more than one method marked as [SetUp], mark only one with the [SetUp] attribute.</Resolution>
+        <Resolution Name="TestFixtureSetUp">Test fixture '{0}' has more than one method marked as [TestFixtureSetUp], mark only one with the [TestFixtureSetUp] attribute.</Resolution>
         <Email>vboctor@users.sourceforge.net</Email>
         <MessageLevel Certainty="99">Error</MessageLevel>
         <FixCategories>NonBreaking</FixCategories>
@@ -52,7 +53,8 @@
         <Name>TestFixture should have a single tear down method</Name>
         <Description>Test fixture classes should have 0 to 1 tear down methods.</Description>
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleTearDownMethod</Url>
-        <Resolution>Test fixture '{0}' has more than one tear down method, mark only one as a tear down method.</Resolution>
+        <Resolution Name="TearDown">Test fixture '{0}' has more than one method marked as [TearDown], mark only one with the [TearDown] attribute.</Resolution>
+        <Resolution Name="TestFixtureTearDown">Test fixture '{0}' has more than one method marked as [TestFixtureTearDown], mark only one with the [TestFixtureTearDown] attribute.</Resolution>
         <Email>vboctor@users.sourceforge.net</Email>
         <MessageLevel Certainty="99">Error</MessageLevel>
         <FixCategories>NonBreaking</FixCategories>
