@@ -136,16 +136,16 @@
                     BuildAction = "Compile"
                 />
                 <File
+                    RelPath = "InvalidMethodSignatureRule.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
                     RelPath = "RuleDefinitions.xml"
                     BuildAction = "EmbeddedResource"
                 />
                 <File
                     RelPath = "TestCasesShouldBeMarkedWithTestCaseAttributeRule.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "TestCasesShouldHaveNoParametersOrReturnValueRule.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />

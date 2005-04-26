@@ -148,5 +148,14 @@ namespace Futureware.FxCop.NUnit
 		{
 			return Reflect.GetTearDownMethod( methodInfo.DeclaringType ) == methodInfo;
 		}
+
+		protected static bool IsNUnitMethod( MethodInfo methodInfo )
+		{
+			return ( IsTestCaseMethod( methodInfo ) ||
+					 IsFixtureSetupMethod( methodInfo ) ||
+					 IsFixtureTearDownMethod( methodInfo ) ||
+					 IsTestSetupMethod( methodInfo ) ||
+					 IsTestTearDownMethod( methodInfo ) );
+		}
 	}
 }

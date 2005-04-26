@@ -23,13 +23,13 @@ using NUnit.Framework;
 
 namespace Futureware.FxCop.NUnit
 {
-	public sealed class TestCasesShouldHaveNoParametersOrReturnValueRule : BaseNUnitRule
+	public sealed class InvalidMethodSignatureRule : BaseNUnitRule
 	{
 		/// <summary>
 		/// Default Constructor
 		/// </summary>
-		public TestCasesShouldHaveNoParametersOrReturnValueRule() : 
-			base( "TestCasesShouldHaveNoParametersOrReturnValue" )
+		public InvalidMethodSignatureRule() : 
+			base( "InvalidMethodSignature" )
 		{
 		}
 
@@ -42,10 +42,7 @@ namespace Futureware.FxCop.NUnit
 
 				foreach( System.Reflection.MethodInfo methodInfo in methods )
 				{
-					// if method starts with "test" and is not marked as [Test],
-					// then an explicit [Test] should be added since NUnit will
-					// treat it as a test case.
-					if ( IsTestCaseMethod( methodInfo ) )
+					if ( IsNUnitMethod( methodInfo ) )
 					{
 						if ( methodInfo.GetParameters().Length > 0 )
 						{
