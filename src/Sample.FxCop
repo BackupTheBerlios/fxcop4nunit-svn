@@ -167,6 +167,32 @@
            </Message>
           </Messages>
          </Type>
+         <Type Name="TestFixtureWithAbstractMethods">
+          <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="Abstract">
+             <Item>SimpleTestCase</Item>
+            </Issue>
+            <Issue Name="Abstract">
+             <Item>TestCaseSetUp</Item>
+            </Issue>
+            <Issue Name="Abstract">
+             <Item>TestCaseTearDown</Item>
+            </Issue>
+            <Issue Name="Abstract">
+             <Item>TestFixtureSetUp</Item>
+            </Issue>
+            <Issue Name="Abstract">
+             <Item>TestFixtureTearDown</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="TestFixturesShouldNotBeAbstractRule" Category="TestFixtures" CheckId="FNU1002" Created="2005-04-27 12:40:25Z">
+            <Issue>
+             <Item>TestFixtureWithAbstractMethods</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
          <Type Name="TestFixtureWithEmptyCategory">
           <Messages>
            <Message TypeName="CategoryNameShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1010" Created="2005-03-01 10:51:37Z">
@@ -228,6 +254,15 @@
            </Message>
           </Messages>
          </Type>
+         <Type Name="TestFixtureWithStaticMethods">
+          <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="Static">
+             <Item>SimpleTestCase</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
          <Type Name="UnmarkedTestCaseFixture">
           <Messages>
            <Message TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="TestCases" CheckId="FNU1006" Created="2005-03-01 10:51:37Z">
@@ -266,6 +301,11 @@
          </Type>
          <Type Name="FixtureSetUpWithParameters">
           <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="Parameters">
+             <Item>Setup</Item>
+            </Issue>
+           </Message>
            <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>FixtureSetUpWithParameters</Item>
@@ -275,8 +315,8 @@
          </Type>
          <Type Name="FixtureSetUpWithReturnValue">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
-            <Issue>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="ReturnType">
              <Item>Setup</Item>
             </Issue>
            </Message>
@@ -289,8 +329,8 @@
          </Type>
          <Type Name="FixtureTearDownWithParameters">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
-            <Issue>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="Parameters">
              <Item>Teardown</Item>
             </Issue>
            </Message>
@@ -303,8 +343,8 @@
          </Type>
          <Type Name="FixtureTearDownWithReturnValue">
           <Messages>
-           <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
-            <Issue>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="ReturnType">
              <Item>Teardown</Item>
             </Issue>
            </Message>
@@ -328,9 +368,6 @@
           <Messages>
            <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
             <Issue>
-             <Item>Init1</Item>
-            </Issue>
-            <Issue>
              <Item>Init2</Item>
             </Issue>
            </Message>
@@ -340,7 +377,7 @@
             </Issue>
            </Message>
            <Message TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="TestFixtures" CheckId="FNU1004" Created="2005-03-01 10:51:37Z">
-            <Issue>
+            <Issue Name="TestFixtureSetUp">
              <Item>MultipleFixtureSetUpAttributes</Item>
             </Issue>
            </Message>
@@ -349,9 +386,6 @@
          <Type Name="MultipleFixtureTearDownAttributes">
           <Messages>
            <Message TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007" Created="2005-03-01 10:51:37Z">
-            <Issue>
-             <Item>Destroy1</Item>
-            </Issue>
             <Issue>
              <Item>Destroy2</Item>
             </Issue>
@@ -362,7 +396,7 @@
             </Issue>
            </Message>
            <Message TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="TestFixtures" CheckId="FNU1005" Created="2005-03-01 10:51:37Z">
-            <Issue>
+            <Issue Name="TestFixtureTearDown">
              <Item>MultipleFixtureTearDownAttributes</Item>
             </Issue>
            </Message>
@@ -381,7 +415,7 @@
             </Issue>
            </Message>
            <Message TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="TestFixtures" CheckId="FNU1004" Created="2005-03-01 10:51:37Z">
-            <Issue>
+            <Issue Name="SetUp">
              <Item>MultipleSetUpAttributes</Item>
             </Issue>
            </Message>
@@ -400,7 +434,7 @@
             </Issue>
            </Message>
            <Message TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="TestFixtures" CheckId="FNU1005" Created="2005-03-01 10:51:37Z">
-            <Issue>
+            <Issue Name="TearDown">
              <Item>MultipleTearDownAttributes</Item>
             </Issue>
            </Message>
@@ -507,6 +541,11 @@
          </Type>
          <Type Name="SetUpWithParameters">
           <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="Parameters">
+             <Item>Setup</Item>
+            </Issue>
+           </Message>
            <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>SetUpWithParameters</Item>
@@ -516,6 +555,11 @@
          </Type>
          <Type Name="SetUpWithReturnValue">
           <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="ReturnType">
+             <Item>Setup</Item>
+            </Issue>
+           </Message>
            <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>SetUpWithReturnValue</Item>
@@ -525,6 +569,17 @@
          </Type>
          <Type Name="SignatureTestFixture">
           <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="ReturnType">
+             <Item>NotVoid</Item>
+            </Issue>
+            <Issue Name="Parameters">
+             <Item>Parameters</Item>
+            </Issue>
+            <Issue Name="Static">
+             <Item>Static</Item>
+            </Issue>
+           </Message>
            <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>SignatureTestFixture</Item>
@@ -570,6 +625,11 @@
          </Type>
          <Type Name="TearDownWithParameters">
           <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="Parameters">
+             <Item>Teardown</Item>
+            </Issue>
+           </Message>
            <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TearDownWithParameters</Item>
@@ -579,6 +639,11 @@
          </Type>
          <Type Name="TearDownWithReturnValue">
           <Messages>
+           <Message TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015" Created="2005-04-27 12:40:25Z">
+            <Issue Name="ReturnType">
+             <Item>Teardown</Item>
+            </Issue>
+           </Message>
            <Message TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001" Created="2005-03-01 10:51:37Z">
             <Issue>
              <Item>TearDownWithReturnValue</Item>
@@ -602,7 +667,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestCases</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="AttributeShouldOnlyMarkTestFixturesRule" Category="TestFixtures" CheckId="FNU1008">
     <Name>Attribute should only mark test fixtures</Name>
@@ -612,7 +677,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestFixtures</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="CategoryNameShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1010">
     <Name>Category name should be specified</Name>
@@ -623,7 +688,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.CategoryNameShouldNotBeEmpty</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="IgnoreReasonShouldNotBeEmptyRule" Category="Attributes" CheckId="FNU1011">
     <Name>Ignore reason should be specified</Name>
@@ -634,7 +699,20 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.IgnoreReasonShouldNotBeEmpty</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
+   </Rule>
+   <Rule TypeName="InvalidMethodSignatureRule" Category="Attributes" CheckId="FNU1015">
+    <Name>Invalid method signature.</Name>
+    <Description>The signature of the specified method does not match the expected signature.</Description>
+    <Resolution Name="Abstract">Method '{0}' is abstract, NUnit attributes should not be associated with abstract methods.</Resolution>
+    <Resolution Name="Parameters">Method '{0}' has parameters, remove parameters to comply with NUnit expected signature.</Resolution>
+    <Resolution Name="ReturnType">Method '{0}' has a return value, return void to comply with NUnit expected signature.</Resolution>
+    <Resolution Name="Static">Method '{0}' is static, NUnit attributes should not be associated with static methods.</Resolution>
+    <Owner>Victor Boctor</Owner>
+    <Url>http://wiki.futureware.biz/default.aspx/MyWiki.InvalidMethodSignature</Url>
+    <Email>vboctor@users.sourceforge.net</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttributeRule" Category="TestCases" CheckId="FNU1006">
     <Name>Test cases should be marked with TestAttribute</Name>
@@ -644,7 +722,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestCasesShouldBeMarkedWithTestCaseAttribute</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesPublicMethodsShouldBeMarkedRule" Category="TestFixtures" CheckId="FNU1007">
     <Name>Test fixture public method should be marked</Name>
@@ -654,7 +732,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesPublicMethodsShouldBeMarked</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldBePublicRule" Category="TestFixtures" CheckId="FNU1001">
     <Name>TestFixture should be declared public</Name>
@@ -664,7 +742,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBePublic</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructorRule" Category="TestFixtures" CheckId="FNU1013">
     <Name>TestFixture constructor should be public</Name>
@@ -674,27 +752,29 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldHaveSingleSetupMethodRule" Category="TestFixtures" CheckId="FNU1004">
     <Name>TestFixture should have a single setup method</Name>
     <Description>Test fixture classes should have 0 to 1 setup methods.</Description>
-    <Resolution Name="Default">Test fixture '{0}' has more than one setup method, mark only one as a setup method.</Resolution>
+    <Resolution Name="SetUp">Test fixture '{0}' has more than one method marked as [SetUp], mark only one with the [SetUp] attribute.</Resolution>
+    <Resolution Name="TestFixtureSetUp">Test fixture '{0}' has more than one method marked as [TestFixtureSetUp], mark only one with the [TestFixtureSetUp] attribute.</Resolution>
     <Owner>Victor Boctor</Owner>
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleSetupMethod</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethodRule" Category="TestFixtures" CheckId="FNU1005">
     <Name>TestFixture should have a single tear down method</Name>
     <Description>Test fixture classes should have 0 to 1 tear down methods.</Description>
-    <Resolution Name="Default">Test fixture '{0}' has more than one tear down method, mark only one as a tear down method.</Resolution>
+    <Resolution Name="TearDown">Test fixture '{0}' has more than one method marked as [TearDown], mark only one with the [TearDown] attribute.</Resolution>
+    <Resolution Name="TestFixtureTearDown">Test fixture '{0}' has more than one method marked as [TestFixtureTearDown], mark only one with the [TestFixtureTearDown] attribute.</Resolution>
     <Owner>Victor Boctor</Owner>
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleTearDownMethod</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldNotBeAbstractRule" Category="TestFixtures" CheckId="FNU1002">
     <Name>TestFixture should not be abstract</Name>
@@ -704,7 +784,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotBeAbstract</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldNotContainPublicPropertiesRule" Category="TestFixtures" CheckId="FNU1012">
     <Name>TestFixture should not have public properties</Name>
@@ -714,7 +794,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotContainPublicProperties</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
    <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructorsRule" Category="TestFixtures" CheckId="FNU1014">
     <Name>TestFixture has a non-default constructor</Name>
@@ -724,7 +804,7 @@
     <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldOnlyContainDefaultConstructors</Url>
     <Email>vboctor@users.sourceforge.net</Email>
     <MessageLevel Certainty="99">Error</MessageLevel>
-    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1886.41555" />
+    <File Name="Futureware.FxCop4NUnit.dll" Version="1.0.1943.42606" />
    </Rule>
   </Rules>
  </FxCopReport>

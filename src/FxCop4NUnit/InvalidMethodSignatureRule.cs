@@ -57,6 +57,20 @@ namespace Futureware.FxCop.NUnit
 							Problem problem = new Problem( resolution );
 							base.Problems.Add( problem );
 						}
+
+						if ( methodInfo.IsAbstract )
+						{
+							Resolution resolution = GetNamedResolution( "Abstract", methodInfo.Name );
+							Problem problem = new Problem( resolution );
+							base.Problems.Add( problem );
+						}
+
+						if ( methodInfo.IsStatic )
+						{
+							Resolution resolution = GetNamedResolution( "Static", methodInfo.Name );
+							Problem problem = new Problem( resolution );
+							base.Problems.Add( problem );
+						}
 					}
 				}
 

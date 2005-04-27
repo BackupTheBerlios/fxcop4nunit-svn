@@ -178,6 +178,8 @@
         <Url>http://wiki.futureware.biz/default.aspx/MyWiki.InvalidMethodSignature</Url>
         <Resolution Name="Parameters">Method '{0}' has parameters, remove parameters to comply with NUnit expected signature.</Resolution>
         <Resolution Name="ReturnType">Method '{0}' has a return value, return void to comply with NUnit expected signature.</Resolution>
+        <Resolution Name="Abstract">Method '{0}' is abstract, NUnit attributes should not be associated with abstract methods.</Resolution>
+        <Resolution Name="Static">Method '{0}' is static, NUnit attributes should not be associated with static methods.</Resolution>
         <Email>vboctor@users.sourceforge.net</Email>
         <MessageLevel Certainty="99">Error</MessageLevel>
         <FixCategories>NonBreaking</FixCategories>

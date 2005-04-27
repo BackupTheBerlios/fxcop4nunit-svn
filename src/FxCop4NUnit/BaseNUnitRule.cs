@@ -112,6 +112,26 @@ namespace Futureware.FxCop.NUnit
 			return setupMethodsCount;
 		}
 
+		protected static bool HasSetUpAttribute( MethodInfo method )
+		{
+			return method.IsDefined( Reflect.SetUpType, false );
+		}
+
+		protected static bool HasTearDownAttribute( MethodInfo method )
+		{
+			return method.IsDefined( Reflect.TearDownType, false );
+		}
+
+		protected static bool HasFixtureSetUpAttribute( MethodInfo method )
+		{
+			return method.IsDefined( Reflect.FixtureSetUpType, false );
+		}
+
+		protected static bool HasFixtureTearDownAttribute( MethodInfo method )
+		{
+			return method.IsDefined( Reflect.FixtureTearDownType, false );
+		}
+
 		protected static bool IsTestCaseMethod( MethodInfo methodInfo )
 		{
 			if ( Reflect.HasTestAttribute( methodInfo ) )
@@ -119,10 +139,10 @@ namespace Futureware.FxCop.NUnit
 
 			if ( methodInfo.Name.ToLower( CultureInfo.InvariantCulture ).StartsWith( "test" ) )
 			{
-				if ( !IsTestSetupMethod( methodInfo ) &&
-					 !IsTestTearDownMethod( methodInfo ) &&
-					 !IsFixtureSetupMethod( methodInfo ) &&
-					 !IsFixtureTearDownMethod( methodInfo ) )
+				if ( !HasSetUpAttribute( methodInfo ) &&
+					 !HasTearDownAttribute( methodInfo ) &&
+					 !HasFixtureSetUpAttribute( methodInfo ) &&
+					 !HasFixtureTearDownAttribute( methodInfo ) )
 					return true;
 			}
 

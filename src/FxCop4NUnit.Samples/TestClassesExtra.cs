@@ -235,4 +235,52 @@ namespace Futureware.FxCop.NUnit.Sample
 		{
 		}
 	}
+
+	[TestFixture]
+	public abstract class TestFixtureWithAbstractMethods
+	{
+		[TestFixtureSetUp]
+		public abstract void TestFixtureSetUp();
+
+		[TestFixtureTearDown]
+		public abstract void TestFixtureTearDown();
+
+		[SetUp]
+		public abstract void TestCaseSetUp();
+
+		[TearDown]
+		public abstract void TestCaseTearDown();
+
+		[Test]
+		public abstract void SimpleTestCase();
+	}
+
+	[TestFixture]
+	public sealed class TestFixtureWithStaticMethods
+	{
+		[TestFixtureSetUp]
+		public static void TestFixtureSetUp()
+		{
+		}
+
+		[TestFixtureTearDown]
+		public static void TestFixtureTearDown()
+		{
+		}
+
+		[SetUp]
+		public static void TestCaseSetUp()
+		{
+		}
+
+		[TearDown]
+		public static void TestCaseTearDown()
+		{
+		}
+
+		[Test]
+		public static void SimpleTestCase()
+		{
+		}
+	}
 }
