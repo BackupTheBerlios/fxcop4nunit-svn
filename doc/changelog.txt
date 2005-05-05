@@ -1,3 +1,12 @@
+FxCop4NUnit v1.1 - 05-MAY-2005
+------------------------------
+
+- Supports FxCop 1.312 and NUnit 2.2.
+- 0000165: [Rules] FNU1015: InvalidMethodSignature (new rule) (vboctor)
+- 0000164: [Rules] FNU1004: Allow test fixtures to include TestFixtureSetUp and SetUp (vboctor)
+- 0000155: [Rules] FNU1007 complains about startup methods marked with [TestFixtureSetUp] (vboctor)
+
+
 FxCop4NUnit v1.0 - 01-MAR-2005
 ------------------------------
 
