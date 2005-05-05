@@ -1,0 +1,28 @@
+FxCop4NUnit v1.1 - 05-MAY-2005
+------------------------------
+
+- Supports FxCop 1.312 and NUnit 2.2.
+- 0000165: [Rules] FNU1015: InvalidMethodSignature (new rule) (vboctor)
+- 0000164: [Rules] FNU1004: Allow test fixtures to include TestFixtureSetUp and SetUp (vboctor)
+- 0000155: [Rules] FNU1007 complains about startup methods marked with [TestFixtureSetUp] (vboctor)
+
+
+FxCop4NUnit v1.0 - 01-MAR-2005
+------------------------------
+
+- Supports FxCop 1.312 and NUnit 2.2.
+- Added FNU1001: TestFixturesShouldBePublic
+- Added FNU1002: TestFixturesShouldNotBeAbstract
+- Added FNU1003: TestFixturesShouldBeSealed
+- Added FNU1004: TestFixturesShouldHaveSingleSetupMethod
+- Added FNU1005: TestFixturesShouldHaveSingleTearDownMethod
+- Added FNU1006: TestCasesShouldBeMarkedWithTestCaseAttribute
+- Added FNU1007: TestFixturesPublicMethodsShouldBeMarked
+- Added FNU1008: AttributeShouldOnlyMarkTestFixtures
+- Added FNU1009: AttributeShouldOnlyMarkTestCases
+- Added FNU1010: CategoryNameShouldNotBeEmpty
+- Added FNU1011: IgnoreReasonShouldNotBeEmpty
+- Added FNU1012: TestFixturesShouldNotContainPublicProperties
+- Added FNU1013: TestFixturesShouldHavePublicDefaultConstructor
+- Added FNU1014: TestFixturesShouldOnlyContainDefaultConstructors
+- Initial version.

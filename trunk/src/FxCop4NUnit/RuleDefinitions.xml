@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Rules FriendlyName="NUnit Rules">
+    <Rule TypeName="TestFixturesShouldBePublic" Category="TestFixtures" CheckId="FNU1001">
+        <Name>TestFixture should be declared public</Name>
+        <Description>A non-public class is marked as a test fixture.  This test fixture will not be executed by NUnit.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBePublic</Url>
+        <Resolution>Declare '{0}' as public or remove the [TestFixture] attribute.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesShouldNotBeAbstract" Category="TestFixtures" CheckId="FNU1002">
+        <Name>TestFixture should not be abstract</Name>
+        <Description>Test fixture classes should not be abstract.  Move the [TestFixture] attribute to the concrete class.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotBeAbstract</Url>
+        <Resolution>Test fixture '{0}' is abstract, move the [TestFixture] attribute to the concrete class.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesShouldBeSealed" Category="TestFixtures" CheckId="FNU1003">
+        <Name>TestFixture should be sealed</Name>
+        <Description>Test fixture classes should be sealed, base classes should not be test fixtures.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldBeSealed</Url>
+        <Resolution>Test fixture '{0}' is not sealed, mark it as sealed.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesShouldHaveSingleSetupMethod" Category="TestFixtures" CheckId="FNU1004">
+        <Name>TestFixture should have a single setup method</Name>
+        <Description>Test fixture classes should have 0 to 1 setup methods.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleSetupMethod</Url>
+        <Resolution Name="SetUp">Test fixture '{0}' has more than one method marked as [SetUp], mark only one with the [SetUp] attribute.</Resolution>
+        <Resolution Name="TestFixtureSetUp">Test fixture '{0}' has more than one method marked as [TestFixtureSetUp], mark only one with the [TestFixtureSetUp] attribute.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesShouldHaveSingleTearDownMethod" Category="TestFixtures" CheckId="FNU1005">
+        <Name>TestFixture should have a single tear down method</Name>
+        <Description>Test fixture classes should have 0 to 1 tear down methods.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHaveSingleTearDownMethod</Url>
+        <Resolution Name="TearDown">Test fixture '{0}' has more than one method marked as [TearDown], mark only one with the [TearDown] attribute.</Resolution>
+        <Resolution Name="TestFixtureTearDown">Test fixture '{0}' has more than one method marked as [TestFixtureTearDown], mark only one with the [TestFixtureTearDown] attribute.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestCasesShouldBeMarkedWithTestCaseAttribute" Category="TestCases" CheckId="FNU1006">
+        <Name>Test cases should be marked with TestAttribute</Name>
+        <Description>NUnit detects test case as methods that are marked with TestAttribute or methods that start with "test" (case insensitive).  The recommended approach is to use TestAttribute rather than the name prefix which is supported for backward compatability.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestCasesShouldBeMarkedWithTestCaseAttribute</Url>
+        <Resolution>Test case '{0}' is not marked with the TestAttribute, mark it with the TestAttribute or rename it so that it doesn't start with "test".</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesPublicMethodsShouldBeMarked" Category="TestFixtures" CheckId="FNU1007">
+        <Name>Test fixture public method should be marked</Name>
+        <Description>Test fixtures public methods should be marked as setup, tear down, or test case.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesPublicMethodsShouldBeMarked</Url>
+        <Resolution>Public method '{0}' is not marked as setup, tear down, or test case.  Mark it as an NUnit method or make it non-public.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="AttributeShouldOnlyMarkTestFixtures" Category="TestFixtures" CheckId="FNU1008">
+        <Name>Attribute should only mark test fixtures</Name>
+        <Description>An NUnit attribute is used to mark a class which is not a TestFixture.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestFixtures</Url>
+        <Resolution>Mark class '{0}' with [TestFixture] or remove other NUnit attributes marking this class.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="AttributeShouldOnlyMarkTestCases" Category="TestCases" CheckId="FNU1009">
+        <Name>Attribute should only mark test cases</Name>
+        <Description>An NUnit attribute is used to mark a method which is not a test case.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.AttributeShouldOnlyMarkTestCases</Url>
+        <Resolution>Mark method '{0}' with [Test] or remove other NUnit attributes marking this method.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="CategoryNameShouldNotBeEmpty" Category="Attributes" CheckId="FNU1010">
+        <Name>Category name should be specified</Name>
+        <Description>A category attribute is used with its name set to a blank string.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.CategoryNameShouldNotBeEmpty</Url>
+        <Resolution Name="TestFixture">Set category name in CategoryAttribute associated with test fixture '{0}'.</Resolution>
+        <Resolution Name="TestCase">Set category name in CategoryAttribute associated with test case '{1}' in test fixture '{0}'.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="IgnoreReasonShouldNotBeEmpty" Category="Attributes" CheckId="FNU1011">
+        <Name>Ignore reason should be specified</Name>
+        <Description>An ignore attribute is used with its name set to a blank string.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.IgnoreReasonShouldNotBeEmpty</Url>
+        <Resolution Name="TestFixture">Set ignore reason in IgnoreAttribute associated with test fixture '{0}'.</Resolution>
+        <Resolution Name="TestCase">Set ignore reason in IgnoreAttribute associated with test case '{1}' in test fixture '{0}'.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesShouldNotContainPublicProperties" Category="TestFixtures" CheckId="FNU1012">
+        <Name>TestFixture should not have public properties</Name>
+        <Description>A test fixture should not have public properties whether inherited or declared within the type.  This includes both static and instance properties.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldNotContainPublicProperties</Url>
+        <Resolution>Mark property '{0}.{1}' as protected or private.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>        
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>    
+    </Rule>
+    <Rule TypeName="TestFixturesShouldHavePublicDefaultConstructor" Category="TestFixtures" CheckId="FNU1013">
+        <Name>TestFixture constructor should be public</Name>
+        <Description>The constructor for the test fixture must be visible outside the declaring assembly.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldHavePublicDefaultConstructor</Url>
+        <Resolution>Mark the constructor for '{0}' public.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>
+    </Rule>
+    <Rule TypeName="TestFixturesShouldOnlyContainDefaultConstructors" Category="TestFixtures" CheckId="FNU1014">
+        <Name>TestFixture has a non-default constructor</Name>
+        <Description>Test fixtures should only have a default constructor.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.TestFixturesShouldOnlyContainDefaultConstructors</Url>
+        <Resolution>Change '{0}' to only have a default constructor.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>
+    </Rule>
+    <Rule TypeName="InvalidMethodSignature" Category="Attributes" CheckId="FNU1015">
+        <Name>Invalid method signature.</Name>
+        <Description>The signature of the specified method does not match the expected signature.</Description>
+        <Url>http://wiki.futureware.biz/default.aspx/MyWiki.InvalidMethodSignature</Url>
+        <Resolution Name="Parameters">Method '{0}' has parameters, remove parameters to comply with NUnit expected signature.</Resolution>
+        <Resolution Name="ReturnType">Method '{0}' has a return value, return void to comply with NUnit expected signature.</Resolution>
+        <Resolution Name="Abstract">Method '{0}' is abstract, NUnit attributes should not be associated with abstract methods.</Resolution>
+        <Resolution Name="Static">Method '{0}' is static, NUnit attributes should not be associated with static methods.</Resolution>
+        <Email>vboctor@users.sourceforge.net</Email>
+        <MessageLevel Certainty="99">Error</MessageLevel>
+        <FixCategories>NonBreaking</FixCategories>
+        <Owner>Victor Boctor</Owner>
+        <GroupOwner>Futureware</GroupOwner>
+        <DevOwner>Victor Boctor</DevOwner>
+    </Rule>
+</Rules>
